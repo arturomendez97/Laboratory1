@@ -1,5 +1,5 @@
 <h1>
-This repository's purpose is to create my resumé in html format
+This repository's purpose is to create my resume in html format
 </h1>
 
 <h2>
