@@ -1,0 +1,112 @@
+/*Afecta todo dentro de bbody*/
+body{
+    font-family : Verdana, sans-serif;
+    /*No afecta lo que  ya tenga un style para el font size, como los headers*/
+    font-size : 14px;
+    /*color : blue*/
+    /*color : rgb(200)*/
+    /*Hexadecimal es el más común*/
+    color : #4F545F;
+    background-color: #f5fafb;
+    /*Si pones solo 1 numero en margin, afecta los 4 lados. Si pones 2, el primero es para arriba y abajo y el segundo para los lados.*/
+    /*Puedes poner 4 para los 4 lados*/
+    /*También funciona margin-left, igual -top, right, bottom-  */
+    margin : 0;
+    padding : 0;
+}
+
+/*El asterizco aplica a todos los elementos*/
+*{
+    box-sizing : border-box;
+}
+
+h1{
+    margin: 10px;
+    background: rgb(34,97,195);
+    background: linear-gradient(322deg, rgba(34,97,195,1) 0%, rgba(45,253,205,1) 100%); 
+    color : white;
+    padding : 30px;
+}
+
+h2{
+    margin: 0;
+    padding : 20px;
+    text-align : center;
+    width : 100%;
+}
+
+h4{
+    margin: 0;
+    background-color : #70b3dd;
+    color : white;
+    padding : 20px;
+}
+
+p{
+    border : 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding : 5px;
+    text-align: center;
+}
+
+div {
+    padding : 10px 50px;
+    text-align : center;
+}
+
+
+
+.main-container{
+    overflow : auto;
+}
+
+
+/*Se aplica cuando el browser reconoce este width*/
+@media (min-width:500px) and (max-width:900px){
+    .left-side, .middle-side, .right-side{
+        width : 100%;
+        float : left;
+    }
+
+    .far-left-side, .near-left-side, .near-right-side, .far-right-side{
+        width : 100%;
+        float : left;
+    }
+}
+
+/*Si solo pones el min-width, se aplica desde ahí y todos los que sean mayores*/
+@media (min-width: 991px){
+    .left-side, .middle-side, .right-side{
+        width : 33%;
+        float : left;
+    }
+
+    .far-left-side, .near-left-side, .near-right-side, .far-right-side{
+        width : 25%;
+        float : left;
+    }
+}
+
+.far-left-side, .near-left-side, .near-right-side, .far-right-side{
+    padding: 20px;
+}
+
+.link{
+    margin: 0;
+    background-color : #3d90c3;
+    color : white;
+    padding : 15px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav{
+    padding : 30px;
+}
+
+.img{
+    padding : 10px;
+}
+
